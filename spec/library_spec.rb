@@ -31,5 +31,9 @@ describe Library do
   end
 
   it 'can return a list of all books by subject' do
+    library = Library.new
+    expect(library.all_books_by_subject('Ruby')).to eq([
+      {title: 'Learn Ruby The Hard Way', author: 'Zed Shaw', subject: 'Ruby'},
+      {title: 'The Well Grounded Rubyist', author: 'Sandi Metz', subject: 'Ruby'}])
   end
 end
