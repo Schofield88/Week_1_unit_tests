@@ -19,6 +19,9 @@ describe Library do
   end
 
   it 'can find a specific book' do
+    library = Library.new
+    expect(library.find_book('POODR')).to eq({title: 'POODR', author: 'Sandi Metz', subject: 'OOP'})
+
   end
 
   it 'can delete a book' do
