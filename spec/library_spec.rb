@@ -12,6 +12,9 @@ describe Library do
   end
 
   it 'can add a new book' do
+    library = Library.new
+    library.add_book(title: 'The Wind in the Willows')
+    expect (@books.any? { |hash| hash[:title] == "The Wind in the Willows" }).to eq true
   end
 
   it 'can find a specific book' do
