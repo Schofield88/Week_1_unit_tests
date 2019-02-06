@@ -30,3 +30,9 @@ class Library
     books.select{ |book| book[:subject] == subject }
   end
 end
+
+library = Library.new
+
+puts library.find_book('POODR')
+library.add_book(title: "Fallen Dragon")
+puts library.find_book('Fallen Dragon')
