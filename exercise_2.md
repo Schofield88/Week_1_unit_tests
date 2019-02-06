@@ -1,7 +1,7 @@
 Assertions for unit tests:
 
 list_books: returns the books array of hashes. Needs to create new Library object, then
-call method.
+call method. 
 
 add_book: pushes a given book to the books array. Expect to see book present in
 book array after method call. Needs to create new Library object, then call method
