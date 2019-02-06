@@ -25,6 +25,9 @@ describe Library do
   end
 
   it 'can delete a book' do
+    library = Library.new
+    library.remove_book("POODR")
+    expect(library.find_book("POODR")).to eq(nil)
   end
 
   it 'can return a list of all books by subject' do
